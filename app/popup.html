@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Tiktok Extension</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/card.min.css">
+    <link rel="stylesheet" href="css/button.min.css">
+    <link rel="stylesheet" href="css/form.min.css">
+    <link rel="stylesheet" href="css/checkbox.min.css">
+  </head>
+<body>
+  <div class="ui one column grid">
+    <div class="column">
+      <div class="ui segment">
+        <div class="ui card">
+          <div class="content">
+            <i class="right floated like icon"></i>
+            <i class="right floated star icon"></i>
+            <div class="header">
+              <img class="ui tiny image" src="images/image16.png" alt="">
+              Tiktok auto downloader
+            </div>
+            <div class="description">
+              <form class="ui form">
+                <div class="field">
+                  <label>Enter hashtag to search here:</label>
+                  <input type="text" class="form-control" id="hashtag" placeholder="E.g #aussielife" required>
+                </div>
+                <div class="ui segment">
+                  <div class="field">
+                    <div class="ui toggle checkbox">
+                      <input type="checkbox" name="public" id="searchTrending">
+                      <label>Search trending videos</label>
+                    </div>    
+                  </div>
+                </div>
+                <div class="ui download primary button" id="searchBtn">
+                  Search Videos
+                </div>          
+              </form>        
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/form.min.js"></script>
+  <script src="js/checkbox.min.js"></script>
+  <script src="js/popup.js"></script>  
+</body>
+</html>

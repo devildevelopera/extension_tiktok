@@ -1,0 +1,33 @@
+{
+    "name": "TikTok Auto Poster",
+    "version": "1.0",
+    "description": "tiktok extension for searching videos with trending hashtags, download and upload it to user's profile",
+    "manifest_version": 2,
+    "permissions": ["tabs", "activeTab", "declarativeContent", "storage"],
+    "background": {
+      "scripts": ["app/js/background.js"],
+      "persistent": false
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.tiktok.com/", "https://www.tiktok.com/*"],
+        "js": ["app/js/jquery-3.4.1.min.js", "app/js/download.min.js", "app/js/contentScript.js"]
+      }
+    ],   
+    "options_page": "app/options.html",
+    "page_action": {
+      "default_popup": "app/popup.html",
+      "default_icon": {
+        "16": "app/images/image16.png",
+        "32": "app/images/image32.png",
+        "48": "app/images/image48.png",
+        "128": "app/images/image128.png"
+      }      
+    },
+    "icons": {
+      "16": "app/images/image16.png",
+      "32": "app/images/image32.png",
+      "48": "app/images/image48.png",
+      "128": "app/images/image128.png"
+    }
+  }

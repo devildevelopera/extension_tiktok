@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="stylesheet" href="css/form.min.css">
+      <link rel="stylesheet" href="css/card.min.css">
+      <link rel="stylesheet" href="css/button.min.css">
+      <link rel="stylesheet" href="css/message.min.css">
+      <style>
+        .container{
+          align-items: center;
+        }
+        #setOptions{
+          margin-top: 20px;
+        }
+      </style>
+    </head>
+    <body>
+        <div class="container text-center">
+          <div class="ui fluid one column grid">
+            <div class="column">
+              <div class="ui segment">
+                <div class="ui card">
+                  <div class="content">
+                    <div class="ui positive message transition hidden" style="display: none;" id="message">
+                      <i class="close icon"></i>
+                      <div class="header">
+                        Download frequency set to <span id="freq"></span> hours
+                      </div>
+                    </div>                    
+                    <div class="header">
+                      Tiktok auto downloader frequency
+                    </div>
+                    <div class="description">
+                      <form class="ui form">
+                        <select name="skills" class="ui fluid dropdown" id="frequency">
+                          <!-- <option value="15000">4 hours</option>
+                          <option value="30000">8 hours</option>
+                          <option value="45000">12 hours</option>
+                          <option value="60000">24 hours</option> -->
+                          <option value="14400000">4 hours</option>
+                          <option value="28800000">8 hours</option>
+                          <option value="43200000">12 hours</option>
+                          <option value="86400000">24 hours</option>
+                        </select>                             
+                      </form>        
+                    </div>
+                  </div>
+                </div>        
+              </div>
+            </div>
+          </div>             
+        </div>        
+    </body>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/options.js"></script>
+    <script src="js/form.min.js"></script>
+  </html>
